@@ -28,7 +28,7 @@ module Recaptcha
           flash[:recaptcha_error] = error
           if model
             model.valid?
-            model.errors.add :base, options[:message] || "Word verification response is incorrect, please try again."
+            model.errors.add :recaptcha, options[:message] || "Word verification response is incorrect, please try again."
           end
           return false
         else
@@ -39,7 +39,7 @@ module Recaptcha
         flash[:recaptcha_error] = "recaptcha-not-reachable"
         if model
           model.valid?
-          model.errors.add :base, options[:message] || "Oops, we failed to validate your word verification response. Please try again."
+          model.errors.add :recaptcha, options[:message] || "Oops, we failed to validate your word verification response. Please try again."
         end
         return false
       rescue Exception => e

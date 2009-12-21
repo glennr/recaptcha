@@ -4,12 +4,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{recaptcha}
-  s.version = "0.2.3"
+  s.name = %q{glennr-recaptcha}
+  s.version = "0.2.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Jason L. Perry"]
-  s.date = %q{2009-10-23}
+  s.authors = ["Jason L. Perry", "Glenn Roberts"]
+  s.date = %q{2009-12-21}
   s.description = %q{This plugin adds helpers for the reCAPTCHA API }
   s.email = %q{jasper@ambethia.com}
   s.extra_rdoc_files = [

@@ -1,3 +1,9 @@
+== Changes in 0.2.4 (Glenn Roberts)
+
+Now adds model errors to :recaptcha, not :base.
+
+Handy if you like to use inline errors in your forms.
+
 = reCAPTCHA
 
 Author::    Jason L Perry (http://ambethia.com)
